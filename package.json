@@ -1,4 +1,23 @@
 {
   "name": "hexboy-cli",
-  "packageManager": "yarn@4.2.2"
+  "scripts": {
+    "start": "tsx ./src/index.ts"
+  },
+  "bin": {
+    "hexboy": "./bin/run.ts"
+  },
+  "files": [
+    "src",
+    "bin"
+  ],
+  "type": "module",
+  "dependencies": {
+    "@clack/core": "^0.3.4",
+    "@clack/prompts": "^0.7.0",
+    "@commander-js/extra-typings": "^12.1.0",
+    "commander": "^12.1.0",
+    "tsx": "^4.19.1",
+    "zx": "^8.1.9"
+  },
+  "packageManager": "yarn@4.5.0"
 }
